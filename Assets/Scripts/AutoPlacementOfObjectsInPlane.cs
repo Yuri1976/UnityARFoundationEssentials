@@ -5,23 +5,23 @@ using UnityEngine.XR.ARFoundation;
 [RequireComponent(typeof(ARPlaneManager))]
 public class AutoPlacementOfObjectsInPlane : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject welcomePanel;
+    //[SerializeField]
+    //private GameObject welcomePanel;
 
     [SerializeField]
     private GameObject placedPrefab;
 
     private GameObject placedObject;
 
-    [SerializeField]
-    private Button dismissButton;
+    //[SerializeField]
+    //private Button dismissButton;
 
     [SerializeField]
     private ARPlaneManager arPlaneManager;
 
     void Awake() 
     {
-        dismissButton.onClick.AddListener(Dismiss);
+        //dismissButton.onClick.AddListener(Dismiss);
         arPlaneManager = GetComponent<ARPlaneManager>();
         arPlaneManager.planesChanged += PlaneChanged;
     }
@@ -35,5 +35,5 @@ public class AutoPlacementOfObjectsInPlane : MonoBehaviour
         }
     }
 
-    private void Dismiss() => welcomePanel.SetActive(false);
+    //private void Dismiss() => welcomePanel.SetActive(false);
 }

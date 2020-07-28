@@ -12,14 +12,14 @@ public class PlacementWithManyController : MonoBehaviour
     [SerializeField]
     private GameObject[] placedPrefabs;
 
-    [SerializeField]
-    private GameObject welcomePanel;
+    //[SerializeField]
+    //private GameObject welcomePanel;
 
     [SerializeField]
     private int maxNumberOfTVs = 1;
 
-    [SerializeField]
-    private Button dismissButton;
+    //[SerializeField]
+    //private Button dismissButton;
 
     private List<GameObject> addedInstances = new List<GameObject>();
 
@@ -45,9 +45,9 @@ public class PlacementWithManyController : MonoBehaviour
     void Awake() 
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
-        dismissButton.onClick.AddListener(Dismiss);
+        //dismissButton.onClick.AddListener(Dismiss);
     }
-    private void Dismiss() => welcomePanel.SetActive(false);
+    //private void Dismiss() => welcomePanel.SetActive(false);
 
     void Update()
     {

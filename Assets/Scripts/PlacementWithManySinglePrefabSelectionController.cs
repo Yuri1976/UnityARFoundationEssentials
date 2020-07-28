@@ -9,11 +9,11 @@ public class PlacementWithManySinglePrefabSelectionController : MonoBehaviour
     [SerializeField]
     private GameObject placedPrefab;
 
-    [SerializeField]
-    private GameObject welcomePanel;
+    //[SerializeField]
+    //private GameObject welcomePanel;
 
-    [SerializeField]
-    private Button dismissButton;
+    //[SerializeField]
+    //private Button dismissButton;
 
     [SerializeField]
     private Camera arCamera;
@@ -46,16 +46,16 @@ public class PlacementWithManySinglePrefabSelectionController : MonoBehaviour
     void Awake() 
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
-        dismissButton.onClick.AddListener(Dismiss);
+        //dismissButton.onClick.AddListener(Dismiss);
     }
 
-    private void Dismiss() => welcomePanel.SetActive(false);
+    //private void Dismiss() => welcomePanel.SetActive(false);
 
     void Update()
     {
         // do not capture events unless the welcome panel is hidden
-        if(welcomePanel.activeSelf)
-            return;
+        //if(welcomePanel.activeSelf)
+        //    return;
 
         if(Input.touchCount > 0)
         {
